@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>com.iafahim.test-pkg</AssemblyName>
+    <RootNamespace>Iafahim.TestPkg</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnityMathematics.NoDeps" Version="$(UnityMathematicsVersion)" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Source lives in the Unity package folder. This csproj just points at it. -->
+  <ItemGroup>
+    <Compile Include="../../../Runtime/**/*.cs" />
+    <Compile Remove="../../../Runtime/**/bin/**/*.cs" />
+    <Compile Remove="../../../Runtime/**/obj/**/*.cs" />
+  </ItemGroup>
+</Project>

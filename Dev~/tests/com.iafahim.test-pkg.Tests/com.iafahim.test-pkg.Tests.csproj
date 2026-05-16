@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UnityMathematics.NoDeps" Version="$(UnityMathematicsVersion)" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/com.iafahim.test-pkg/com.iafahim.test-pkg.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="../../../Tests/**/*.Tests.cs" />
+    <Compile Remove="../../../Tests/**/bin/**" />
+    <Compile Remove="../../../Tests/**/obj/**" />
+  </ItemGroup>
+</Project>

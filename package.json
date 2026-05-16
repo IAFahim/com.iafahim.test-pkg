@@ -1,0 +1,15 @@
+{
+  "name": "com.iafahim.test-pkg",
+  "version": "0.1.0",
+  "displayName": "TestPkg",
+  "description": "TestPkg",
+  "unity": "6000.5",
+  "dependencies": {
+    "com.unity.mathematics": "1.3.2"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "IAFahim"
+  }
+}

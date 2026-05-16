@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Dev~/src/com.iafahim.test-pkg/com.iafahim.test-pkg.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="Dev~/tests/com.iafahim.test-pkg.Tests/com.iafahim.test-pkg.Tests.csproj" />
+  </Folder>
+</Solution>
